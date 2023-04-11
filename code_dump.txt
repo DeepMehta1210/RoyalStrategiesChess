@@ -1,0 +1,41 @@
+for j in chess.row:
+            for c in chess.col:
+                if j==1:
+                    if c=="a" or c=="h":
+                        print(f'{chess.pieases["b_rook"]}',end=" ")
+                    elif c=="b" or c=="g":
+                        print(f'{chess.pieases["b_knight"]}',end=" ")
+                    elif c=="c" or c=="f":
+                        print(f'{chess.pieases["b_bishop"]}',end=" ")
+                    elif c=="d":
+                        print(f'{chess.pieases["b_queen"]}',end=" ")
+                    elif c=="e":
+                        print(f'{chess.pieases["b_king"]}',end=" ")
+                elif j==2:
+                        print(f'{chess.pieases["b_pawn"]}',end=" ")
+                elif j==7 :
+                        print(f'{chess.pieases["w_pawn"]}',end=" ")
+                elif j==8:
+                    if c=="a" or c=="h":
+                        print(f'{chess.pieases["w_rook"]}',end=" ")
+                    elif c=="b" or c=="g":
+                        print(f'{chess.pieases["w_knight"]}',end=" ")
+                    elif c=="c" or c=="f":
+                        print(f'{chess.pieases["w_bishop"]}',end=" ")
+                    elif c=="d":
+                        print(f'{chess.pieases["w_queen"]}',end=" ")
+                    elif c=="e":
+                        print(f'{chess.pieases["w_king"]}',end=" ")
+                else:
+                    if j in [3,5]:
+                        if c in['b','d','h','f']:
+                                print(f'{chess.pieases["black"]}',end=" ")
+                        elif c in ['a','c','e','g']:
+                                print(f'{chess.pieases["white"]}',end=" ")
+                    elif j in [4,6]:
+                        if c in ['a','c','e','g']:
+                                print(f'{chess.pieases["black"]}',end=" ")
+                        elif c in['b','d','h','f']:
+                                print(f'{chess.pieases["white"]}',end=" ")
+
+                            print()
